@@ -6,8 +6,80 @@
     <meta name="description" content="Carrusel de Imágenes con Bootstrap y jQuery">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Carrusel de Im&aacute;genes con Bootstrap y jQuery</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
 </head>
-<body>
-    <div></div>
+<body style="background-color: rgb(210, 237, 246);">
+    <div class="container text-center">
+        <h1 class="fw-light lh-lg">Carrusel de Im&aacute;genes</h1>
+        <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel" data-bs-theme="light">
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="3" aria-label="Slide 4"></button>
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="4" aria-label="Slide 5"></button>
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="5" aria-label="Slide 6"></button>
+            </div>
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="images/wallpaper1.jpg" class="d-block w-100" height="550px" alt="Spider-Man Newspapers">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5>Spider-Man</h5>
+                        <p>Spider-Man Newspapers.</p>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="images/wallpaper2.jpg" class="d-block w-100" height="550px" alt="Coding, Coffee and Music">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5>Relaxing</h5>
+                        <p>Coding, Coffee and Music.</p>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="images/wallpaper3.png" class="d-block w-100" height="550px" alt="Mathematics board">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5>Mathematics</h5>
+                        <p>Math board.</p>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="images/wallpaper4.jpg" class="d-block w-100" height="550px" alt="Just Code It, Coding">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5>Just Code It</h5>
+                        <p>Coding.</p>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="images/wallpaper5.jpg" class="d-block w-100" height="550px" alt="JavaScript Inspiration Algorithm">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5>JavaScript Inspiration Algorithm</h5>
+                        <p>Let's get Awesome.</p>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="images/wallpaper6.png" class="d-block w-100" height="550px" alt="Developer Setup">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5>Developer Setup</h5>
+                        <p>Developer Life.</p>
+                    </div>
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Anterior</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Siguiente</span>
+            </button>
+        </div>
+        <div class="container bg-success bg-opacity-75 border border-info border-5 rounded-5 mt-4 mb-5 w-50 shadow">
+            <h4 class="text-white py-4 fw-semibold">Actualmente est&aacute;s en la imagen n&uacute;mero: <span id="lblImageNumber">1</span></h4>
+        </div>
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.0/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.min.js" integrity="sha384-Rx+T1VzGupg4BHQYs2gCW9It+akI2MM/mndMCy36UVfodzcJcF0GGLxZIzObiEfa" crossorigin="anonymous"></script>
+    <script src="imageCarouselScript.js"></script>
 </body>
 </html>
